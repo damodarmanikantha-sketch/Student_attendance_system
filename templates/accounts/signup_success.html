@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}Registration Successful{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-7">
+
+            <div class="card border-0 shadow-lg rounded-5 text-center overflow-hidden">
+
+                <!-- Header -->
+                <div class="bg-success text-white py-5">
+
+                    <i class="bi bi-check-circle-fill display-1"></i>
+
+                    <h2 class="fw-bold mt-3">
+
+                        Registration Successful!
+
+                    </h2>
+
+                </div>
+
+                <!-- Body -->
+                <div class="card-body p-5">
+
+                    <h4 class="fw-semibold mb-4">
+
+                        🎉 Welcome to the Student Facial Attendance System
+
+                    </h4>
+
+                    <div class="alert alert-info">
+
+                        <i class="bi bi-info-circle-fill me-2"></i>
+
+                        Your student account has been created successfully.
+
+                    </div>
+
+                    <div class="alert alert-warning">
+
+                        <i class="bi bi-hourglass-split me-2"></i>
+
+                        Your account is currently waiting for
+                        <strong>Super Admin Approval</strong>.
+
+                    </div>
+
+                    <div class="alert alert-secondary">
+
+                        <i class="bi bi-shield-check me-2"></i>
+
+                        After approval, you will be able to log in
+                        and access the attendance system.
+
+                    </div>
+
+                    <div class="d-grid gap-3 mt-5">
+
+                        <a href="{% url 'home' %}"
+                           class="btn btn-primary btn-lg rounded-pill">
+
+                            <i class="bi bi-house-door-fill me-2"></i>
+
+                            Back to Home
+
+                        </a>
+
+                        <a href="{% url 'login' %}"
+                           class="btn btn-outline-success btn-lg rounded-pill">
+
+                            <i class="bi bi-box-arrow-in-right me-2"></i>
+
+                            Go to Login
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="card-footer bg-light py-3">
+
+                    <small class="text-muted">
+
+                        Thank you for registering. We appreciate your patience while your account is reviewed.
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

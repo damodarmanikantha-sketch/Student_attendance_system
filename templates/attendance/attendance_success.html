@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Attendance Submitted{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-7 col-md-9">
+
+            <div class="card border-0 shadow-lg rounded-5 overflow-hidden">
+
+                <!-- Header -->
+
+                <div class="bg-success text-white text-center py-5">
+
+                    <i class="bi bi-check-circle-fill display-1"></i>
+
+                    <h2 class="fw-bold mt-3">
+
+                        Attendance Submitted
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Your attendance request has been received successfully.
+
+                    </p>
+
+                </div>
+
+                <!-- Body -->
+
+                <div class="card-body p-5 text-center">
+
+                    <div class="alert alert-success rounded-4">
+
+                        <i class="bi bi-check-circle-fill me-2"></i>
+
+                        Your attendance has been submitted successfully.
+
+                    </div>
+
+                    <div class="alert alert-warning rounded-4">
+
+                        <i class="bi bi-hourglass-split me-2"></i>
+
+                        <strong>Status:</strong>
+
+                        Pending Approval
+
+                    </div>
+
+                    <p class="text-muted mt-4">
+
+                        Your attendance record is awaiting verification by the
+                        administrator. Once approved, it will appear in your
+                        attendance history.
+
+                    </p>
+
+                    <div class="row mt-5">
+
+                        <div class="col-md-6 mb-3">
+
+                            <a href="{% url 'attendance_history' %}"
+                               class="btn btn-primary btn-lg rounded-pill w-100">
+
+                                <i class="bi bi-clock-history me-2"></i>
+
+                                View History
+
+                            </a>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <a href="{% url 'home' %}"
+                               class="btn btn-outline-success btn-lg rounded-pill w-100">
+
+                                <i class="bi bi-house-door-fill me-2"></i>
+
+                                Dashboard
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+
+                <div class="card-footer text-center bg-light">
+
+                    <small class="text-muted">
+
+                        Student Facial Attendance System • AI Powered Attendance
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
